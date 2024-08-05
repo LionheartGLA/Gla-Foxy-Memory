@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background-color: #241a15;
+    --grid-color: #373737;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.background {
+    background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: var(--grid-color);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    scale: 0.7;
+    position: relative;
+}
+
+.bt-div {
+    background-image: url("Img/button.png");
+    width: 120px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -50px;
+    left: -1px
+}
+
+.bt-div:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.main-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.square {
+    background-image: url("Img/black.png");
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.color-bt {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 50px;
+    width: 115px;
+}
+
+.square:hover .color-bt {
+    display: flex;
+}
+
+.color {
+    height: 35px;
+    width: 35px;
+    user-select: none;
+}
+
+.color:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    scale: 1.1;
+}
